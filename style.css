@@ -3,10 +3,18 @@
     margin: 0;
     padding: 0;
 }
-.header{
+
+/* Base Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header {
     text-align: center;
-   min-height: 600px;
-    padding: 100;
+    min-height: 500px;
+    padding: 100px;
     background-image: url('1.jpeg');
     color: white;
     background-repeat: no-repeat;
@@ -17,186 +25,213 @@
     justify-content: center;
     flex-direction: column;
 }
-nav{
-    color: white;
-padding: 25px;
-display: flex;
-justify-content: space-around;
 
-background: linear-gradient(90deg, #8F0505 0%, #3BB7E5 100%);
+nav {
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #8F0505 0%, #3BB7E5 100%);
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     color: white;
+    font-size: 18px;
+    font-weight: 500;
 }
-.logo{
+
+.logo {
     color: blue;
-    /* God of War Рогнарек */
-
-
-
-font-family: 'Roboto';
-
-font-weight: 400;
-font-size: 50px;
-
-
-background: linear-gradient(180deg, #334A6E 0%, #333665 49.52%, #3D0000 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-
-
+    font-weight: 700;
+    font-size: 48px;
+    background: linear-gradient(180deg, #334A6E 0%, #333665 49.52%, #3D0000 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
-.rosbr{
-    
-    margin: 0;
-    color: white;
+
+/* Main Section Titles (h1) */
+.monstr_h1,
+.pers-log,
+.bosses-log,
+.weapon-log,
+.info-log {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.monstr_h1 {
     background-color: black;
+    color: white; 
+    padding: 20px 0;
+    margin: 0;
 }
-.rosr{
-    text-align: center;
-    font-size: 50px;
+
+.pers-log {
+    background: linear-gradient(90deg, #8F0505 0%, #3BB7E5 100%);
+    margin: 0;
+    padding: 15px;
     color: white;
-    
-    
-    
-}
-.weapon-log{
-    text-align: center;
-    font-size: 100px;
-    margin: 0;
 }
 
-.haos{
-
+.bosses-log {
+    background-color: black;
+    color: black;
+    text-shadow: 0 0 10px red;
     margin: 0;
+    padding: 15px;
+}
+
+.weapon-log {
+    margin: 0;
+    padding: 20px 0;
+    color: white;
+}
+
+.info-log {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+/* Card Titles inside sections (h1) */
+.pers h1,
+.boss div h1,
+.weap h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Cards & Content Sections */
+.all_monstr {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.monstr {
     display: flex;
-
-}
-.lef{
-    margin: 0;
-    padding: 10px;
-
-    
-    
-}
-
-.weapons{
-    background: #6e1e1e;
-    background: linear-gradient(180deg, rgba(110, 30, 30, 1) 0%, rgba(29, 160, 253, 1) 51%, rgba(235, 247, 101, 1) 100%);
-    margin: 0;
-    
-}
-
-
-
-.info-text {
-    margin: 0;
-}
-.all_monstr{
-    background-color: black;
-    color: white;
-        font-size: 36px;
-    
-    
-}
-
-.pers-log{
-    background:linear-gradient(90deg, #8F0505 0%, #3BB7E5 100%) ;
-    margin: 0;
-    text-align: center;
-    padding: 10px;
-        font-size: 36px;
-}
-
-.monstr_h1{
-    background-color: black;
-    color:white; 
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-.monstr{
-    display: flex;
-    padding: 20px 100px 0 0;
-    gap: 60px;
+    padding: 20px 100px 20px 20px;
+    gap: 40px;
     align-items: center;
 }
 
-.monstr img{
+.monstr p {
+    font-size: 16px;
+}
+
+.monstr img,
+.pers img {
     width: 300px;
     height: 250px;
+    object-fit: cover;
 }
-.pers img{
-     width: 300px;
-    height: 250px;
-    
-}
-.personags{
+
+.personags {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: black;
     color: red;
     gap: 50px;
-    font-size: 36px;
+    padding: 30px 20px;
 }
-.pers{
+
+.pers {
     width: 300px;
 }
-.bosses{
-           font-size: 36px;
-   
+
+.pers p {
+    font-size: 15px;
+    color: white;
+}
+
+.bosses {
     background-image: url('forest.jfif');
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 0 0 5px white;
-    
+    padding: 30px 0;
 }
 
-.boss{
+.boss {
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    padding: 20px 0;
 }
 
-.boss h2{
+.boss h2 {
     width: 500px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.boss img {
-     width: 400px;
+.boss img,
+.boss div {
+    width: 400px;
 }
 
-.boss div{
-     width: 400px;
-}
-.bosses-log{
-background-color: black;
-color: black;
-text-shadow: 0 0 10px red;
-margin: 0;
-padding: 10px;
-text-align: center;
-font-size: 100px;
-}
-
-.info{
-    font-size: 25px;
-    background-color:#490202;
-    color: red;
-    text-shadow: 0 0 100px black;
+.weapons {
+    background: linear-gradient(180deg, rgba(110, 30, 30, 1) 0%, rgba(29, 160, 253, 1) 51%, rgba(235, 247, 101, 1) 100%);
     margin: 0;
-    
+    padding: 30px 20px;
 }
-.info-log{
+
+.weap h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.haos,
+.lef,
+.draup {
     margin: 0;
-    text-align:  center;
-    
-    
-    
-    
+    padding: 10px;
+}
+
+.info {
+    font-size: 16px;
+    background-color: #490202;
+    color: #ff6b6b;
+    text-shadow: 0 0 10px black;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.info-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer & Credits */
+.rosbr {
+    margin: 0;
+    color: white;
+    background-color: black;
+    padding: 30px 20px;
+}
+
+.rosbr h1.attet {
+    font-size: 18px;
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.rosbr h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.rosr {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
 }
